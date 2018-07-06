@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input
+    style="width: 100%; padding: 10px; margin: 30px"
+    autofocus
+    type="text"
+    placeholder="Senha"
+    name="senha"
+    id="senha"
+    oninput="avaliarSenha()"
+  >
+  <h1>Nota: <span id="nota"></span></h1>
+  <table border="1" cellspacing="0" cellpadding="10">
+    <thead>
+      <tr>
+        <th>Atributo</th>
+        <th>Pontuação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Caracteres</td>
+        <td id="caracteres"></td>
+      </tr>
+      <tr>
+        <td>Maiúscula</td>
+        <td id="maiusculas"></td>
+      </tr>
+      <tr>
+        <td>Minúscula</td>
+        <td id="minuscula"></td>
+      </tr>
+      <tr>
+        <td>Números</td>
+        <td id="numeros"></td>
+      </tr>
+      <tr>
+        <td>Símbolos</td>
+        <td id="simbolos"></td>
+      </tr>
+      <tr>
+        <td>Num/Simb no meio</td>
+        <td id="numSimb"></td>
+      </tr>
+      <tr>
+        <td>Requerimentos</td>
+        <td id="reqs"></td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="./index.js"></script>
+</body>
+</html>
